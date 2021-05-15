@@ -1,0 +1,120 @@
+body {
+    background-image:url("../ruins.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Do Hyeon', sans-serif;
+    color: lightgrey; 
+}
+.logo {
+    height: 100px;
+}
+.navbar-nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+/* drop down css */
+#dropdownMenuButton {
+    border: none;
+    background: none;
+	cursor: pointer;
+	outline: inherit;
+    font-family: 'Do Hyeon', sans-serif;
+    color: rgba(255,255,255,.5);
+    margin-left: -10px;
+}
+#dropdownMenuButton:hover {
+    color: lightgrey;
+}
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+}
+.dropdown-menu:hover {
+    background-color: none;
+}
+.dropdown-item {
+    color: lightgrey;
+    background-color: transparent;
+}
+.contact-div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* NEWS CONTAINER */
+.news-container h1 {
+    text-align: center;
+}
+.card {
+  margin: 1%; 
+  width: 20%;
+  background-color: rgba(0,0,0,0.66); 
+}
+.cards-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.btn {
+    background-color: rgba(13,15,14);
+    border:1px solid lightgray;
+}
+.btn:hover {
+    background-color: darkslategray;
+}
+.pagination {
+   display: flex;
+   justify-content: center;
+   padding: 10px;
+}
+.page-item, .page-link {
+    background-color: transparent;
+    color: lightgray;
+}
+.card-text {
+    min-height: 200px;
+}
+.card {
+    text-align: center;
+}
+
+
+
+/* UPDATES */
+.cards-container-updates {
+    border-top: 1px solid lightgray;
+    margin-top: 100px ;
+}
+.card-img-top {
+
+    min-height: 300px;
+    object-fit: cover;
+}
+
+
+@media all and (min-width: 480px) and (max-width: 1280px) { 
+    .cards-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        text-align: center;
+    }
+    .cards {
+        width: 45% im !important;
+    }
+}
+@media all and (max-width: 480px) { 
+    .cards-container {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+}

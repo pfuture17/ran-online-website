@@ -1,0 +1,379 @@
+body {
+    font-family: 'Do Hyeon', sans-serif;
+    color: lightgrey;
+    
+}
+.logo {
+    height: 100px;
+}
+/* NAVIGATION BAR */
+.navbar {
+    position: absolute;
+    z-index: 1;
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+/* DROPDOWN LINK INSIDE THE NAVBAR */
+#dropdownMenuButton {
+    border: none !important;
+    background: none;
+	cursor: pointer;
+	outline: none !important;
+    font-family: 'Do Hyeon', sans-serif;
+    color: rgba(255,255,255,.5);
+    
+}
+#dropdownMenuButton:hover {
+    color: lightgrey;
+}
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+}
+.dropdown-menu:hover {
+    background-color: none;
+}
+.dropdown-item {
+    color: lightgrey;
+    background-color: transparent;
+}
+
+
+
+/* CAROSEL */
+.carousel  img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* LATEST NEWS AND UPDATES */
+a:link {
+    color: lightgrey;
+    text-decoration: none;
+}
+a:hover {
+    color: darkslategray;
+}
+.container-news img {
+    width: 100%;
+}
+.news-img {
+    width: 40%;
+    padding: 10px;
+}
+.news-msg {
+    width: 100%;
+}
+.news {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+.container-news {
+    width: 60%;
+}
+.news-1, .news-2, .news-3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid darkslategray;
+    margin-top: 10px;
+    background-color: rgba(8, 9, 10, 0.66);
+    border-radius: 10px;
+}
+
+.more-news {
+    margin: 20px 20px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-radius: 100px;
+    color: lightgray;
+    background-color: rgba(8, 9, 10, 0.66);
+}
+.more-news:hover {
+    color: darkslategray;
+}
+#morenews {
+text-align: center;
+}
+/* ABOUT RAN ONLINE */
+#about-h1 {
+    text-align: center;
+    color: darkolivegreen;
+}
+.about {
+    border-top: 1px solid darkslategray;
+    border-bottom: 1px solid darkslategray;
+    background-color: rgba(17, 19, 16, 0.637);
+    width: 100%;
+    min-height: 400px;
+}
+ .about-ran {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.about-img {
+    width: 30%;
+    border: 1px solid darkslategray;
+}
+.about-msg {
+    width: 60%;
+}
+.about-img img {
+    width: 100%;
+} 
+
+/* TRAILER */
+.mid{
+    width: 100%;
+    background-image: url("ruins.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.game-trailer-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#game-trailer-h1 {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.game-trailer-1, .game-trailer-2, .game-trailer-3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid darkslategray;
+    border-bottom: 1px solid darkslategray;
+    
+}
+.game-trailer-1 .game-trailer-msg h1{
+    color: #bc9928;
+}
+.game-trailer-1 {
+    background-color: rgba(37,24,10,0.66);
+    min-height: 400px;
+}
+.game-trailer-2 .game-trailer-msg h1{
+    color: #3431ccc7;
+}
+.game-trailer-2 {
+    background-color: rgba(4, 3, 48, 0.66);
+    min-height: 400px;
+}
+.game-trailer-3 .game-trailer-msg h1{
+    color: #77095cc7;
+}
+.game-trailer-3 {
+    background-color: rgba(26, 3, 22, 0.66);
+    min-height: 400px;
+}
+
+
+.game-trailer-msg {
+    width: 50%;
+}
+.game-trailer-msg p {
+    width: 50%;
+}
+.game-trailer-video {
+    width: 50%;
+    min-height: 300px;
+    text-align: right;
+    padding: 20px;
+}
+.game-trailer-video iframe {
+    width: 50%;
+    height: 300px;
+}
+
+.game-trailer-section h1 {
+    font-size: 4rem;
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid dimgray;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+#copyright {
+    position: absolute;
+    align-self: center;
+    background-color: rgba(0,0,0,0.66);
+    width: 40vw;
+    text-align: center;
+}
+#myVideo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 95vw;
+    z-index: 1;
+    align-items: center;
+    color: black;
+    
+}
+.social img {
+    width: 50px;
+    padding: 5px;
+}
+
+@media all and (max-width: 480px) { 
+    .logo {
+        width: 20%;
+        height: auto;
+    }
+    .news-1, .news-2, .news-3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-news {
+        width: 90%;
+        text-align: center;
+    }
+    #news-h1 {
+        text-align: center;
+    }
+    .news-msg {
+        padding: 20px;
+    }
+    .news-img {
+        width: 50%;
+    }
+    .about-ran {
+        flex-direction: column;
+        width: 90%;
+    }
+    .about-msg {
+        width: 90%;
+    }
+    .about-img {
+        width: 90%;
+    }
+
+    .game-trailer-1, .game-trailer-2, .game-trailer-3{
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    }
+    .game-trailer-video {
+        width: 90%;
+    }
+    .game-trailer-video iframe{
+        width: 100%;
+    }
+    .game-trailer-msg {
+        width: 90%;
+        text-align: center;
+    }
+    .game-trailer-msg p {
+        width: 100%;
+        text-align: center;
+    }
+    #copyright {
+        border: 1px solid red;
+        width: 100%;
+        align-self:flex-end;
+
+    }
+    .social {
+        justify-content: center;
+    }
+    .more-news button{
+        width: 60%;
+    }
+    .more-news{
+        text-align: contain;
+    }
+    .carousel  img{
+        width: 100%;
+        height: 50vw;
+        object-fit: cover;
+    }
+}
+@media all and (min-width: 480px) and (max-width: 1280px) { 
+    .news-1, .news-2, .news-3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-news {
+        width: 90%;
+        text-align: center;
+    }
+    #news-h1 {
+        text-align: center;
+    }
+    .news-msg {
+        padding: 20px;
+    }
+    .news-img {
+        width: 50%;
+    }
+    .about-ran {
+        flex-direction: column;
+        width: 90%;
+    }
+    .about-msg {
+        width: 90%;
+    }
+    .about-img {
+        width: 90%;
+    }
+    .game-trailer-1, .game-trailer-2, .game-trailer-3{
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        }
+        .game-trailer-video {
+            width: 90%;
+        }
+        .game-trailer-video iframe{
+            width: 100%;
+        }
+        .game-trailer-msg {
+            width: 90%;
+            text-align: center;
+        }
+        .game-trailer-msg p {
+            width: 100%;
+            text-align: center;
+        }
+        footer {
+            height: 5vh;
+        }
+        .carousel  img{
+            width: 100%;
+            height: 50vw;
+            object-fit: cover;
+        }
+}
+
+
