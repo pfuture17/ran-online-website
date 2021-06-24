@@ -1,0 +1,24 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy":"gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pfuture17/ran-online-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pfuture17/ran-online-website/issues"
+  },
+  "homepage": "https://github.com/pfuture17.github.io/ran-online-website",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
